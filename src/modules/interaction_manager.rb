@@ -24,7 +24,7 @@ module InteractionManager
 		while money < 5
 			print "Please add some balance to play game (min 5): "
 			begin
-				money = gets.chomp.to_i
+				money = Integer(gets.chomp)
 			rescue  ArgumentError
 				puts "PLEASE ENTER A NUMERIC VALUE"
 			end
